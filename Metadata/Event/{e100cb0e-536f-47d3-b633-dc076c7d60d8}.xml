@@ -148,7 +148,7 @@
 	<object class="MixerBusPanner" id="{a6180489-421e-4b70-8deb-8f79b4a13062}" />
 	<object class="SingleSound" id="{e7a47833-09fe-48e0-ab12-0d3fe3cc061b}">
 		<property name="volume">
-			<value>-80</value>
+			<value>-8</value>
 		</property>
 		<relationship name="audioFile">
 			<destination>{d4e92b51-3a1e-43a8-b59c-e8c08abd072f}</destination>
@@ -174,6 +174,9 @@
 		<property name="pitch">
 			<value>1</value>
 		</property>
+		<relationship name="modulators">
+			<destination>{58ce6fec-e40a-4c94-a919-de47c8ce9270}</destination>
+		</relationship>
 	</object>
 	<object class="ProxyEffect" id="{5d3af940-931f-41ab-8240-207d34d6d353}">
 		<property name="inputFormat">
@@ -184,4 +187,12 @@
 		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{59450d8c-194f-4916-a870-dbe47bb0e5ec}" />
+	<object class="RandomizerModulator" id="{58ce6fec-e40a-4c94-a919-de47c8ce9270}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>pitch</value>
+		</property>
+		<property name="amount">
+			<value>10</value>
+		</property>
+	</object>
 </objects>
